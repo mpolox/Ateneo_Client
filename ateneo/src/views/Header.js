@@ -7,15 +7,15 @@ import Typography from '@material-ui/core/Typography';
 
 class Header extends Component {
 
-    render(){
-        return(
+    render() {
+        return (
             <AppBar position="static">
                 <Toolbar>
                     <Typography variant="h6" color="inherit">
                         Centro de Notificaciones
                 </Typography>
-            </Toolbar>
-          </AppBar>
+                </Toolbar>
+            </AppBar>
         );
     };
 

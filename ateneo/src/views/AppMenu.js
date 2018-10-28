@@ -6,22 +6,22 @@ import Massage from '@material-ui/icons/Message';
 import CloudUpload from '@material-ui/icons/CloudUpload';
 
 class AppMenu extends Component {
-    render(){
-        return(
+    render() {
+        return (
             <List component="nav">
-        <ListItem button>
-          <ListItemIcon>
-            <Massage />
-          </ListItemIcon>
-          <ListItemText primary="Crear notificación" />
-        </ListItem>
-        <ListItem button>
-          <ListItemIcon>
-            <CloudUpload />
-          </ListItemIcon>
-          <ListItemText primary="Enviar notificación" />
-        </ListItem>
-      </List>
+                <ListItem button>
+                    <ListItemIcon>
+                        <Massage />
+                    </ListItemIcon>
+                    <ListItemText primary="Crear notificación" />
+                </ListItem>
+                <ListItem button>
+                    <ListItemIcon>
+                        <CloudUpload />
+                    </ListItemIcon>
+                    <ListItemText primary="Enviar notificación" />
+                </ListItem>
+            </List>
         );
     }
 }
