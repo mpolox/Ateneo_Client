@@ -5,7 +5,7 @@ class Footer extends Component {
     render() {
 
         return (
-            <AppBar position="bottom"  color="default">
+            <AppBar position="relative"  color="default">
                 <Toolbar>
                     <Typography variant="h6" color="inherit">
                         Centro de Notificaciones

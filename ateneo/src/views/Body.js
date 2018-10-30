@@ -14,7 +14,7 @@ class Body extends Component {
                     <AppMenu/>
                 </Grid>
                 <Grid item xs={9}>
-                    <Content/>
+                    <Content data="Mis datos"/>
                 </Grid>
             </Grid>
         );
