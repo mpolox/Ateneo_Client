@@ -7,25 +7,25 @@ import CloudUpload from '@material-ui/icons/CloudUpload';
 
 
 class AppMenu extends Component {
-    handleClick = () => {
-        console.log('Click happened');
-      }
 
     render() {
         return (
             <List component="nav">
-                <ListItem button onClick={this.handleClick}>
+                <ListItem button onClick={this.props.handleCrear}>
                     <ListItemIcon>
                         <Massage />
                     </ListItemIcon>
                     <ListItemText primary="Crear notificación" />
                 </ListItem>
-                <ListItem button onClick={this.handleClick}>
+                <ListItem button onClick={this.props.handleEnviar}>
                     <ListItemIcon>
                         <CloudUpload />
                     </ListItemIcon>
                     <ListItemText primary="Enviar notificación" />
                 </ListItem>
+                <div>
+                    {this.props.tipo}
+                </div>
             </List>
         );
     }
