@@ -8,7 +8,7 @@ import Content from "./Content";
 class Body extends Component {
 
     state = {
-        tipo: "default"
+        tipo: "This is the default message"
     }
 
     handleCrear = () => {

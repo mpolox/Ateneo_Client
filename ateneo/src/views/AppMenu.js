@@ -23,9 +23,6 @@ class AppMenu extends Component {
                     </ListItemIcon>
                     <ListItemText primary="Enviar notificación" />
                 </ListItem>
-                <div>
-                    {this.props.tipo}
-                </div>
             </List>
         );
     }

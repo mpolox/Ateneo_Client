@@ -1,17 +1,24 @@
 import React, { Component } from "react";
-import { Paper } from "@material-ui/core";
+import Createnotification from "./CreateNotication";
+import SendNotification from "./SendNotification";
 
 class Content extends Component {
 
 
     render(){
         
-        const style = {
-            Paper: { padding:20, margin:10, height:400 }
+        let myOption;
+
+        if (this.props.data === "ENVIAR") {
+            myOption = <SendNotification></SendNotification>;
+        } else {            
+            myOption = <Createnotification></Createnotification>;
         }
                
         return(
-            <Paper style={style.Paper}>{this.props.data}</Paper>
+            <div>
+                {myOption}
+            </div>
         );
     }
 }
